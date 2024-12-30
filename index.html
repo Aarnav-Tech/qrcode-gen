@@ -5,65 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Releases</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #007bff;
-        }
-
-        .list-group {
-            margin-top: 20px;
-        }
-
-        .list-group-item {
-            background-color: #ffffff;
-            border: 1px solid #dee2e6;
-            border-radius: 0.25rem;
-            padding: 15px;
-            margin-bottom: 10px;
-            transition: box-shadow 0.3s;
-        }
-
-        .list-group-item:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn {
-            margin-right: 5px;
-            margin-top: 10px;
-        }
-
-        .text-danger {
-            color: #dc3545;
-            text-align: center;
-        }
-
-        .no-assets {
-            color: #6c757d;
-            font-style: italic;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>QR Code Generator Releases</h1>
-        <div id="releases" class="list-group"></div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.4/marked.min.js"></script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const releasesContainer = document.getElementById('releases');
@@ -124,5 +67,63 @@
                 });
         });
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .list-group {
+            margin-top: 20px;
+        }
+
+        .list-group-item {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .list-group-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        .text-danger {
+            color: #dc3545;
+            text-align: center;
+        }
+
+        .no-assets {
+            color: #6c757d;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>QR Code Generator Releases</h1>
+        <div id="releases" class="list-group"></div>
+    </div>
 </body>
 </html>
