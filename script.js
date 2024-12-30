@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 releaseItem.innerHTML = `
                     <div>
                         <strong>${release.name}</strong>
-                        <p>${release.body}</p>
+                        <div>${marked(release.body)}</div>
                     </div>
                 `;
 
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 } else {
                     const noAssetsMessage = document.createElement('p');
+                    noAssetsMessage.className = 'no-assets';
                     noAssetsMessage.textContent = 'No downloadable assets available.';
                     releaseItem.appendChild(noAssetsMessage);
                 }
